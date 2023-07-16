@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Console", "src\Checkout.Console\Checkout.Console.csproj", "{C87B3227-93FF-4032-9C6B-39C1B8D6953A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Application", "Checkout.Application\Checkout.Application.csproj", "{BF6AD9AE-1176-4D08-8C85-94EAE42E4084}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Application", "src\Checkout.Application\Checkout.Application.csproj", "{BF6AD9AE-1176-4D08-8C85-94EAE42E4084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Domain", "Checkout.Domain\Checkout.Domain.csproj", "{D202C02E-E354-4338-9481-AF33AA696242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Domain", "src\Checkout.Domain\Checkout.Domain.csproj", "{D202C02E-E354-4338-9481-AF33AA696242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Infrastructure", "Checkout.Infrastructure\Checkout.Infrastructure.csproj", "{D0454188-C7BB-49D6-8525-7FF8953E5AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Infrastructure", "src\Checkout.Infrastructure\Checkout.Infrastructure.csproj", "{D0454188-C7BB-49D6-8525-7FF8953E5AB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
