@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="DTOs\Carts\" />
+      <Folder Include="Extensions\" />
+      <Folder Include="Mapping\" />
+      <Folder Include="Services\Carts\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Checkout.Domain\Checkout.Domain.csproj" />
+      <ProjectReference Include="..\Checkout.Infrastructure\Checkout.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
