@@ -11,8 +11,4 @@
       <ProjectReference Include="..\Checkout.Application\Checkout.Application.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    </ItemGroup>
-
 </Project>

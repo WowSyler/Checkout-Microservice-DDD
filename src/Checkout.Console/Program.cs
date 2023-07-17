@@ -1,10 +1,10 @@
 ﻿using Checkout.Application.Constants;
 using Checkout.Application.Exceptions;
 using Checkout.Application.Extensions;
+using Checkout.Application.Mapping;
 using Checkout.Console.Command;
 using Checkout.Domain.Shared.Enums;
 using Checkout.Domain.Shared.Model.Command;
-using Checkout.Infrastructure;
 using Checkout.Infrastructure.Data;
 using Newtonsoft.Json;
 
@@ -19,6 +19,7 @@ public static class Program
         try
         {
             System.Console.WriteLine("Checkout Start!");
+            InitAutoMapperConfig.InitializeAutomapper();
             FakeData.SetFakeData(); // change
 
             while (true)
