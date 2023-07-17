@@ -1,4 +1,5 @@
 using Checkout.Console.Models;
+using Checkout.Domain.Logging;
 using Checkout.Domain.Shared.Model.Command;
 
 namespace Checkout.Console.Command;
@@ -14,6 +15,8 @@ public class ResetCartCommand : ICommand
 
     public Response Execute()
     {
+        ConsoleLoggerAdapter.Logger.LogInformation("Command Execute - Reset Cart");
+
         throw new NotImplementedException();
     }
 }

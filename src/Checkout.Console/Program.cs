@@ -3,6 +3,7 @@ using Checkout.Application.Exceptions;
 using Checkout.Application.Extensions;
 using Checkout.Application.Mapping;
 using Checkout.Console.Command;
+using Checkout.Domain.Logging;
 using Checkout.Domain.Shared.Enums;
 using Checkout.Domain.Shared.Model.Command;
 using Checkout.Infrastructure.Data;
@@ -12,13 +13,14 @@ namespace Checkout.Console;
 
 public static class Program
 {
+    
     public static void Main(string[] args)
     {
         Exceptions.SetGlobalExceptionHandler();
-
+        
         try
         {
-            System.Console.WriteLine("Checkout Start!");
+            ConsoleLoggerAdapter.Logger.LogInformation("Checkout Start!");
             InitAutoMapperConfig.InitializeAutomapper();
             FakeData.SetFakeData(); // change
 
@@ -42,24 +44,24 @@ public static class Program
                 var commandModel = JsonConvert.DeserializeObject<BaseCommandModel>(json);
                 if (commandModel is null)
                 {
-                    System.Console.WriteLine("File is null");
+                    ConsoleLoggerAdapter.Logger.LogWarning("File is null");
                     continue;
                 }
 
-                System.Console.WriteLine($"Command run : {commandModel.Command}");
+                ConsoleLoggerAdapter.Logger.LogInformation($"Command run : {commandModel.Command}");
 
                 CommandRun(commandModel.Command, json);
             }
         }
         catch (Exception e)
         {
-            System.Console.WriteLine("Checkout End with Error!");
-            System.Console.WriteLine(e);
+            ConsoleLoggerAdapter.Logger.LogError("Checkout End with Error!");
+            ConsoleLoggerAdapter.Logger.LogError(e.Message, e);
             throw;
         }
         finally
         {
-            System.Console.WriteLine("Checkout End!");
+            ConsoleLoggerAdapter.Logger.LogInformation("Checkout End!");
         }
     }
 
@@ -100,6 +102,7 @@ public static class Program
                 File.WriteAllText(CommandConstants.OutputFolder, json);
                 break;
             default:
+                ConsoleLoggerAdapter.Logger.LogError("Wrong command");
                 throw new ArgumentOutOfRangeException();
         }
 

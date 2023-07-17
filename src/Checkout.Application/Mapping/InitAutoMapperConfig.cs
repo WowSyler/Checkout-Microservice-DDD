@@ -13,4 +13,6 @@ public static class InitAutoMapperConfig
         
         Mapper = config.CreateMapper();
     }
+    
+    //var destination = mapper.Map<Source, Destination>(source);
 }

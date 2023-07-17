@@ -1,4 +1,5 @@
 using Checkout.Console.Models;
+using Checkout.Domain.Logging;
 using Checkout.Domain.Shared.Model.Command;
 
 namespace Checkout.Console.Command;
@@ -13,6 +14,8 @@ public class AddItemCommand : ICommand
     }
     public Response Execute()
     {
+        ConsoleLoggerAdapter.Logger.LogInformation("Command Execute - Add Item");
+
         throw new NotImplementedException();
     }
 }

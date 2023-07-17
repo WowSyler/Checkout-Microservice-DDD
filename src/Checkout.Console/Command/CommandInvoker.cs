@@ -1,4 +1,5 @@
 using Checkout.Console.Models;
+using Checkout.Domain.Logging;
 
 namespace Checkout.Console.Command;
 
@@ -20,13 +21,15 @@ public class CommandInvoker
 
     public Response Execute()
     {
-         return _command.Execute();
+        ConsoleLoggerAdapter.Logger.LogInformation("Command Execute");
+        return _command.Execute();
     }
 
     public List<Response> ExecuteAll()
     {
         List<Response> responses = new();
         _commandLists.ForEach(x => responses.Add(x.Execute()));
+        ConsoleLoggerAdapter.Logger.LogInformation("Command Execute All");
         return responses;
     }
 }
