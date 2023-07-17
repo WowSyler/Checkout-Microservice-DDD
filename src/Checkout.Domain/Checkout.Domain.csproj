@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <Folder Include="Carts\" />
-      <Folder Include="Shared\Enums\" />
+      <Folder Include="Interfaces\" />
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,1 @@
+{"command":"addVasItemToItem", "payload": {"itemId": 1, "vasItemId":10, "categoryId": 2, "sellerId":3, "price":1.53, "quantity":1}}
