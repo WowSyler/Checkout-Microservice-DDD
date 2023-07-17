@@ -1,9 +1,10 @@
-namespace Checkout.Test.Infrastructure;
+namespace Checkout.Domain.UnitTests;
 
 public class UnitTest1
 {
     [Fact]
     public void Test1()
     {
+
     }
 }

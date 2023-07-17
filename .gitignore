@@ -55,6 +55,7 @@ ipch/
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
+**/.DS_Store
 
 # NuGet Packages
 *.nupkg

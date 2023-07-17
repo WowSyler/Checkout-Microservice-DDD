@@ -11,15 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Domain", "src\Chec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Infrastructure", "src\Checkout.Infrastructure\Checkout.Infrastructure.csproj", "{D0454188-C7BB-49D6-8525-7FF8953E5AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Test.Domain", "tests\Checkout.Test.Domain\Checkout.Test.Domain.csproj", "{74EBFD42-81FC-462B-B156-562C4DC5C9BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Domain.UnitTests", "tests\Checkout.Domain.UnitTests\Checkout.Domain.UnitTests.csproj", "{74EBFD42-81FC-462B-B156-562C4DC5C9BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Test.Application", "tests\Checkout.Test.Application\Checkout.Test.Application.csproj", "{64D0B950-CDA3-4F78-AE38-010B4FFB3127}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Application.UnitTests", "tests\Checkout.Application.UnitTests\Checkout.Application.UnitTests.csproj", "{64D0B950-CDA3-4F78-AE38-010B4FFB3127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Test.Infrastructura", "test\Checkout.Test.Infrastructura\Checkout.Test.Infrastructura.csproj", "{18564D93-4E7B-4073-80E5-7F8DFA8AAD79}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Test.Infrastructura", "tests\Checkout.Test.Infrastructura\Checkout.Test.Infrastructura.csproj", "{FDB3D3B6-E860-46EB-B0E6-A925FABB09FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Test.Infrastructure", "tests\Checkout.Test.Infrastructure\Checkout.Test.Infrastructure.csproj", "{062190A1-64D8-4578-8E50-11D29E525F75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Infrastructure.UnitTests", "tests\Checkout.Infrastructure.UnitTests\Checkout.Infrastructure.UnitTests.csproj", "{062190A1-64D8-4578-8E50-11D29E525F75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,14 +50,6 @@ Global
 		{64D0B950-CDA3-4F78-AE38-010B4FFB3127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D0B950-CDA3-4F78-AE38-010B4FFB3127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D0B950-CDA3-4F78-AE38-010B4FFB3127}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18564D93-4E7B-4073-80E5-7F8DFA8AAD79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18564D93-4E7B-4073-80E5-7F8DFA8AAD79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18564D93-4E7B-4073-80E5-7F8DFA8AAD79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18564D93-4E7B-4073-80E5-7F8DFA8AAD79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FDB3D3B6-E860-46EB-B0E6-A925FABB09FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDB3D3B6-E860-46EB-B0E6-A925FABB09FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDB3D3B6-E860-46EB-B0E6-A925FABB09FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDB3D3B6-E860-46EB-B0E6-A925FABB09FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{062190A1-64D8-4578-8E50-11D29E525F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{062190A1-64D8-4578-8E50-11D29E525F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062190A1-64D8-4578-8E50-11D29E525F75}.Release|Any CPU.ActiveCfg = Release|Any CPU

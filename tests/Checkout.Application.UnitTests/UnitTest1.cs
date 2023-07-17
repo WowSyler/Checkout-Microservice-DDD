@@ -1,4 +1,4 @@
-namespace Checkout.Test.Application;
+namespace Checkout.Application.UnitTests;
 
 public class UnitTest1
 {
