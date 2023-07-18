@@ -11,6 +11,5 @@ public static class AutoItemAddConstants
     public const string ItemRemove = "";
     public const string DisplayCart = "";
     public const string ResetCart = "";
-    
-    public const string FileWriteMsg = "Checkout services is auto run.";
+ 
 }
