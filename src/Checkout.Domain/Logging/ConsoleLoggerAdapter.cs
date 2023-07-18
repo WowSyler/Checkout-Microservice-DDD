@@ -1,4 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
 using Checkout.Domain.Interfaces;
 
 namespace Checkout.Domain.Logging;
@@ -7,18 +6,18 @@ public class ConsoleLoggerAdapter :ILogger
 {
     public static readonly ILogger Logger = new ConsoleLoggerAdapter();
     
-    public void LogWarning(string message, params object[] args)
+    public void LogWarning(string message)
     {
-        Console.WriteLine($"LogWarning: {message} {args}");
+        System.Console.WriteLine($"LogWarning: {message}");
     }
 
-    public void LogInformation(string message, params object[] args)
+    public void LogInformation(string message)
     {
-        Console.WriteLine($"LogInformation: {message} {args}");
+        System.Console.WriteLine($"LogInformation: {message}");
     } 
     
-    public void LogError(string message, params object[] args)
+    public void LogError(string message)
     {
-        Console.WriteLine($"LogError: {message} {args}");
+        System.Console.WriteLine($"LogError: {message}");
     }
 }

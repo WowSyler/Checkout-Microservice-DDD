@@ -1,10 +1,11 @@
+using Checkout.Application.Commands.Request;
 using Checkout.Domain.Base;
 
 namespace Checkout.Domain.Shared.Model.Command;
 
 public class AddVasItemToItemModel: BaseCommandModel
 {
-    public AddVasItemToItemPayloadModel Payload { get; set; }
+    public CartAddVasItemRequest Payload { get; set; }
 }
 
 

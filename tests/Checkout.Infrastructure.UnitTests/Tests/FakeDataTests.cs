@@ -1,3 +1,4 @@
+using Checkout.Domain.CartAggregate;
 using Checkout.Infrastructure.Data;
 
 namespace Checkout.Infrastructure.UnitTests.Tests;
@@ -9,26 +10,13 @@ public class FakeDataTests
     public void Get_FakeData_Fail()
     {
         //Arrange
-        var count = 0;
+        var newCart = new Cart(){Id = 1};
 
         //Act
-        var cartCount = FakeDbContext.Carts.Count;
+        var cart = FakeDbContext.Cart;
 
         //Assert
-        Assert.Equal(count, cartCount);
+        Assert.Equal(newCart.Id, cart.Id);
     }
     
-    [Fact]
-    public void Get_FakeData_Successful()
-    {
-        //Arrange
-        var count = 5;
-
-        //Act
-        FakeData.SetFakeData();
-        var cartCount = FakeDbContext.Carts.Count;
-
-        //Assert
-        Assert.Equal(count, cartCount);
-    }
 }

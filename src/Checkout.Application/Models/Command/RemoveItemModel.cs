@@ -1,10 +1,11 @@
+using Checkout.Application.Commands.Request;
 using Checkout.Domain.Base;
 
 namespace Checkout.Domain.Shared.Model.Command;
 
 public class RemoveItemModel: BaseCommandModel
 {
-    public RemoveItemPayloadModel? Payload { get; set; }
+    public CartItemRemoveRequest? Payload { get; set; }
 }
 
 

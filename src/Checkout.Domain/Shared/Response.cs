@@ -5,5 +5,5 @@ namespace Checkout.Console.Models;
 public class Response : ValueObject
 {
     public bool Result { get; set; }
-    public string? Message { get; set; }
+    public object? Message { get; set; }
 }

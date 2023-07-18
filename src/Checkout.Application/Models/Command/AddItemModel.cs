@@ -1,10 +1,11 @@
+using Checkout.Application.Commands.Request;
 using Checkout.Domain.Base;
 
 namespace Checkout.Domain.Shared.Model.Command;
 
 public class AddItemModel: BaseCommandModel
 {
-    public AddItemPayloadModel Payload { get; set; }
+    public CartAddItemRequest Payload { get; set; }
 }
 
 
