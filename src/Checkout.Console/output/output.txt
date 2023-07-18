@@ -1,1 +1,1 @@
-{"Result":true,"Message":"Item is remove."}
+{"Result":true,"Message":{"items":[{"itemId":1,"categoryId":3004,"sellerId":23,"price":1455.56,"quantity":4,"vasItems":[{"vasItemId":1,"categoryId":3242,"sellerId":5003,"price":145.5,"quantity":2}]}],"totalPrice":6113.24,"appliedPromotionId":9909,"totalDiscount":611.324}}

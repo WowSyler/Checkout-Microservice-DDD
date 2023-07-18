@@ -1,22 +1,18 @@
+using Checkout.Application.Handlers.QureyHandlers;
 using Checkout.Console.Models;
 using Checkout.Domain.Logging;
-using Checkout.Domain.Shared.Model.Command;
 
 namespace Checkout.Console.Command;
 
 public class DisplayCartCommand : ICommand
 {
-    private readonly DisplayCartModel _displayCartModel;
-
-    public DisplayCartCommand(DisplayCartModel displayCartModel)
-    {
-        _displayCartModel = displayCartModel;
-    }
+    private readonly GetShowCartQueryHandler _cartQueryHandler = new(); 
+    
 
     public Response Execute()
     {
         ConsoleLoggerAdapter.Logger.LogInformation("Command Execute - Display Cart");
 
-        throw new NotImplementedException();
+        return _cartQueryHandler.ShowCart();
     }
 }

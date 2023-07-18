@@ -79,13 +79,11 @@ public static class Program
                 commandInvoker.SetCommand(removeItemCommand);
                 break;
             case CommandName.ResetCart:
-                var resetCartModel = JsonConvert.DeserializeObject<ResetCartModel>(json)!;
-                var resetCartCommand = new ResetCartCommand(resetCartModel);
+                var resetCartCommand = new ResetCartCommand();
                 commandInvoker.SetCommand(resetCartCommand);
                 break;
             case CommandName.DisplayCart:
-                var displayCartModel = JsonConvert.DeserializeObject<DisplayCartModel>(json)!;
-                var displayCartCommand = new DisplayCartCommand(displayCartModel);
+                var displayCartCommand = new DisplayCartCommand();
                 commandInvoker.SetCommand(displayCartCommand);
                 break;
             default:
