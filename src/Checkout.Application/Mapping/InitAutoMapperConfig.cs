@@ -4,15 +4,17 @@ namespace Checkout.Application.Mapping;
 
 public static class InitAutoMapperConfig
 {
-    public static IMapper Mapper;
-    public static void InitializeAutomapper()
+    private static readonly Lazy<IMapper> Lazy = new Lazy<IMapper>(() =>
     {
-        var config = new MapperConfiguration(cfg => {
-            //cfg.CreateMap<Class, ClassDTO>();
+        var config = new MapperConfiguration(cfg =>
+        {
+            cfg.AddProfile<CustomMapping>();
         });
-        
-        Mapper = config.CreateMapper();
-    }
+
+        return config.CreateMapper();
+    });
+
+    public static IMapper Mapper => Lazy.Value;
     
     //var destination = mapper.Map<Source, Destination>(source);
 }

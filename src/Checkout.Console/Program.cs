@@ -1,7 +1,6 @@
 ﻿using Checkout.Application.Constants;
 using Checkout.Application.Exceptions;
 using Checkout.Application.Extensions;
-using Checkout.Application.Mapping;
 using Checkout.Console.Command;
 using Checkout.Domain.Logging;
 using Checkout.Domain.Shared.Enums;
@@ -21,7 +20,6 @@ public static class Program
         try
         {
             ConsoleLoggerAdapter.Logger.LogInformation("Checkout Start!");
-            InitAutoMapperConfig.InitializeAutomapper();
             FakeData.SetFakeData(); // change
 
             while (true)
