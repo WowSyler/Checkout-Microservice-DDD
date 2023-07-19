@@ -1,22 +1,19 @@
-Checkout Microservice Console Application
+# Checkout Microservice Console Application
+Design patterns,
+manuel CQRS design, DDD, TDD etc.
+
 Commands:
-    addItem
-    addVasItemToItem
-    removeItem
-    resetCart
-    displayCart
+    "addItem,
+    addVasItemToItem,
+    removeItem,
+    resetCart,
+    displayCart"
 write a command in the console.
 
 Command read "input/command.txt" file.
 
 
-# Trendyol Checkout Case
-
-In this case, we expect you to develop a shopping cart application similar to the one used by everyone who uses e-commerce.  
-
-You are not required to connect your application to a database, dockerize it, write a web service, or use a framework. However, there is no restriction related to this. An application that reads the given commands from a file, executes each command individually, and writes the result of each command to an output file will be sufficient. The important criteria here are clean code, SOLID principles, design patterns, object-oriented design, unit testing, and, based on your experience level, present your skills using Domain-Driven Design (DDD). While writing the case, it will be helpful to write in a testable and extendable manner, preferably using Test-Driven Development (TDD) practices. 
-
-**It will be beneficial not to start coding without reading the entire case.** Make sure that you read and understand the whole case before starting coding. Below are the key concepts and behaviors that explain the business:
+# Checkout App
 
 ## Cart  
 It is an object that contains all other objects. All objects are applied to the Cart. A cart can contain a maximum of **10** unique items (excluding VasItems). The total number of products cannot exceed **30**. The total amount of the Cart cannot exceed **500,000** TL.
