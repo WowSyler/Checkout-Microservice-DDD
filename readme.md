@@ -1,3 +1,15 @@
+Checkout Microservice Console Application
+Commands:
+    addItem
+    addVasItemToItem
+    removeItem
+    resetCart
+    displayCart
+write a command in the console.
+
+Command read "input/command.txt" file.
+
+
 # Trendyol Checkout Case
 
 In this case, we expect you to develop a shopping cart application similar to the one used by everyone who uses e-commerce.  
